@@ -133,6 +133,15 @@ TÍTULOS
 
 }
 
+.ofertasTitulo{
+
+    background:#4A3B12;
+
+    border-left:6px solid #FFD700;
+
+    color:#FFD700;
+
+}
 
 /*==========================================
 GRILLAS
@@ -155,7 +164,8 @@ GRILLAS
 }
 
 .bebidas,
-.postres{
+.postres,
+.ofertas{
 
     grid-template-columns:1fr;
 
@@ -196,11 +206,12 @@ TARJETAS GRANDES
 ==========================================*/
 
 .bebidas .card,
-.postres .card{
+.postres .card,
+.ofertas .card{
 
     width:100%;
 
-    max-width:720px;
+    max-width:800px;
 
 }
 
@@ -220,7 +231,8 @@ IMÁGENES
 }
 
 .bebidas .card img,
-.postres .card img{
+.postres .card img,
+.ofertas .card img{
 
     height:430px;
 

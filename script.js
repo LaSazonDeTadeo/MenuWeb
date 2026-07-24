@@ -10,7 +10,27 @@ const whatsapp = "5491121793883";
 //========================================
 
 const platos = [
+{
 
+    categoria:"Ofertas",
+
+    nombre:"6 Tamales Peruanos",
+
+    precio:20000,
+
+    imagen:"img/tamales.jpg",
+
+    descripcion:"Promoción especial de seis tamales artesanales.",
+
+    stock:15,
+
+    recomendado:true,
+
+    picante:false,
+
+    disponible:true
+
+},
 {
     categoria:"Platos",
 
@@ -123,18 +143,23 @@ const menu = document.getElementById("menu");
 const categorias = [
 
     {
-        nombre: "Platos",
-        clase: "platos"
+        nombre:"Ofertas",
+        clase:"ofertas"
     },
 
     {
-        nombre: "Bebidas",
-        clase: "bebidas"
+        nombre:"Platos",
+        clase:"platos"
     },
 
     {
-        nombre: "Postres",
-        clase: "postres"
+        nombre:"Bebidas",
+        clase:"bebidas"
+    },
+
+    {
+        nombre:"Postres",
+        clase:"postres"
     }
 
 ];

@@ -1,0 +1,375 @@
+/*==========================================
+RESET
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/*==========================================
+BODY
+==========================================*/
+
+body{
+
+    background:#111827;
+
+    color:white;
+
+}
+
+
+/*==========================================
+HEADER
+==========================================*/
+
+header{
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.logo{
+
+    width:120px;
+
+    margin-bottom:20px;
+
+}
+
+header h1{
+
+    font-size:2.7rem;
+
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    color:#bdbdbd;
+
+    font-size:1.1rem;
+
+}
+
+
+/*==========================================
+CONTENEDOR GENERAL
+==========================================*/
+
+.menu{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+
+/*==========================================
+TÍTULOS DE CATEGORÍA
+==========================================*/
+
+.tituloCategoria{
+
+    margin-top:60px;
+
+    margin-bottom:25px;
+
+    padding-left:15px;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    border-left:6px solid #25D366;
+
+}
+
+
+/*==========================================
+GRID DE CADA CATEGORÍA
+==========================================*/
+
+.contenedorCategoria{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-bottom:50px;
+
+}
+
+
+/*==========================================
+TARJETAS
+==========================================*/
+
+.card{
+
+    background:#1F2937;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/*==========================================
+IMAGENES
+==========================================*/
+
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+
+/*==========================================
+CONTENIDO
+==========================================*/
+
+.card h2{
+
+    padding:20px 20px 10px;
+
+    font-size:1.4rem;
+
+}
+
+.card p{
+
+    padding:0 20px;
+
+    color:#d3d3d3;
+
+    line-height:1.6;
+
+}
+
+.card h3{
+
+    padding:15px 20px;
+
+    color:#25D366;
+
+    font-size:1.5rem;
+
+}
+
+.card small{
+
+    display:block;
+
+    padding:0 20px 20px;
+
+    color:#bdbdbd;
+
+}
+
+
+/*==========================================
+BADGES
+==========================================*/
+
+.badge{
+
+    display:inline-block;
+
+    margin:15px 10px 0 20px;
+
+    padding:6px 12px;
+
+    border-radius:50px;
+
+    font-size:.8rem;
+
+    font-weight:bold;
+
+}
+
+.recomendado{
+
+    background:#FFD700;
+
+    color:#000;
+
+}
+
+.picante{
+
+    background:#E53935;
+
+    color:white;
+
+}
+
+
+/*==========================================
+BOTÓN PEDIDO
+==========================================*/
+
+.btnPedido{
+
+    display:block;
+
+    width:90%;
+
+    margin:20px auto;
+
+    padding:15px;
+
+    text-align:center;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btnPedido:hover{
+
+    background:#1FA855;
+
+}
+
+
+/*==========================================
+BOTÓN AGOTADO
+==========================================*/
+
+.agotado{
+
+    display:block;
+
+    width:90%;
+
+    margin:20px auto;
+
+    padding:15px;
+
+    background:#555;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+    cursor:not-allowed;
+
+}
+
+
+/*==========================================
+BOTÓN FLOTANTE
+==========================================*/
+
+.floating{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+    transition:.3s;
+
+}
+
+.floating:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+/*==========================================
+RESPONSIVE
+==========================================*/
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:2rem;
+
+    }
+
+    .tituloCategoria{
+
+        font-size:1.6rem;
+
+    }
+
+    .contenedorCategoria{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

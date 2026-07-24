@@ -238,21 +238,17 @@ categorias.forEach(categoria=>{
 
         let boton = "";
 
-        if(plato.stock > 0 && plato.disponible){
+        if (plato.stock > 0 && plato.disponible) {
 
-            boton = `
-
-            <a
-
+    boton = `
+        <a
             class="btnPedido"
-
             target="_blank"
-
-            href="https://wa.me/${whatsapp}?text=Hola,%20quiero%20hacer%20un%20pedido%20de:%20${encodeURIComponent(plato.nombre)}"
-
+            href="https://wa.me/${whatsapp}?text=Hola,%20quiero%20hacer%20un%20pedido%20de:%20${encodeURIComponent(plato.nombre)}">
             Pedir por WhatsApp
-
-            </a>
+        </a>
+    `;
+}
 
             `;
 

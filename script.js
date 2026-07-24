@@ -31,6 +31,7 @@ const platos = [
     disponible:true
 
 },
+
 {
     categoria:"Platos",
 

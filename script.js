@@ -22,13 +22,13 @@ const platos = [
 
     descripcion:"Promoción especial de seis tamales artesanales.",
 
-    stock:0,
+    stock:25,
 
     recomendado:true,
 
     picante:false,
 
-    disponible:false
+    disponible:true
 
 },
 
@@ -43,13 +43,13 @@ const platos = [
 
     descripcion:"Delicado tiradito acompañado de salsa de ají amarillo.",
 
-    stock:0,
+    stock:10,
 
     recomendado:true,
 
     picante:false,
 
-    disponible:false
+    disponible:true
 },
 
 {
@@ -63,13 +63,13 @@ const platos = [
 
     descripcion:"Seco tradicional acompañado de frijoles.",
 
-    stock:0,
+    stock:15,
 
     recomendado:true,
 
     picante:false,
 
-    disponible:false
+    disponible:true
 },
 
 {
@@ -83,13 +83,13 @@ const platos = [
 
     descripcion:"Combinado peruano tradicional.",
 
-    stock:0,
+    stock:10,
 
     recomendado:false,
 
     picante:true,
 
-    disponible:false
+    disponible:true
 },
 
 {
@@ -103,13 +103,13 @@ const platos = [
 
     descripcion:"Bebida tradicional con dos empanadas.",
 
-    stock:0,
+    stock:10,
 
     recomendado:false,
 
     picante:false,
 
-    disponible:false
+    disponible:true
 },
 
 {
@@ -123,13 +123,13 @@ const platos = [
 
     descripcion:"Todos los postres disponibles al mismo precio.",
 
-    stock:0,
+    stock:30,
 
     recomendado:false,
 
     picante:false,
 
-    disponible:false
+    disponible:true
 }
 
 ];

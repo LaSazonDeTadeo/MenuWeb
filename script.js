@@ -238,7 +238,7 @@ categorias.forEach(categoria=>{
 
         let boton = "";
 
-        if (plato.stock > 0 && plato.disponible) {
+if (plato.stock > 0 && plato.disponible) {
 
     boton = `
         <a
@@ -248,24 +248,16 @@ categorias.forEach(categoria=>{
             Pedir por WhatsApp
         </a>
     `;
-}
 
-            `;
+} else {
 
-        }else{
-
-            boton = `
-
-            <button class="agotado">
-
+    boton = `
+        <button class="agotado">
             Agotado
+        </button>
+    `;
 
-            </button>
-
-            `;
-
-        }
-
+}
 
         //--------------------------------
         // Tarjeta

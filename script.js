@@ -22,13 +22,13 @@ const platos = [
 
     descripcion:"Promoción especial de seis tamales artesanales.",
 
-    stock:10,
+    stock:0,
 
     recomendado:true,
 
     picante:false,
 
-    disponible:true
+    disponible:false
 
 },
 
@@ -248,7 +248,7 @@ categorias.forEach(categoria=>{
 
             target="_blank"
 
-            href="https://wa.me/${whatsapp}?text=Hola,%20quiero%20pedir:%20${encodeURIComponent(plato.nombre)}">
+            href="https://wa.me/${whatsapp}?text=Hola,%20quiero%20hacer%20un%20pedido%20de:%20${encodeURIComponent(plato.nombre)}"
 
             Pedir por WhatsApp
 

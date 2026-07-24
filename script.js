@@ -120,7 +120,24 @@ const platos = [
 
 const menu = document.getElementById("menu");
 
-const categorias = ["Platos","Bebidas","Postres"];
+const categorias = [
+
+    {
+        nombre: "Platos",
+        clase: "platos"
+    },
+
+    {
+        nombre: "Bebidas",
+        clase: "bebidas"
+    },
+
+    {
+        nombre: "Postres",
+        clase: "postres"
+    }
+
+];
 
 
 //========================================
@@ -129,56 +146,62 @@ const categorias = ["Platos","Bebidas","Postres"];
 
 categorias.forEach(categoria=>{
 
+    //==============================
     // Título
+    //==============================
 
     const titulo = document.createElement("h2");
 
-    titulo.className="tituloCategoria";
+    titulo.className = `tituloCategoria ${categoria.clase}Titulo`;
 
-    titulo.textContent=categoria;
+    titulo.textContent = categoria.nombre;
 
     menu.appendChild(titulo);
 
 
+    //==============================
     // Contenedor
+    //==============================
 
-    const contenedor=document.createElement("div");
+    const contenedor = document.createElement("div");
 
-    contenedor.className="contenedorCategoria";
+    contenedor.className = `contenedorCategoria ${categoria.clase}`;
 
     menu.appendChild(contenedor);
 
 
+    //==============================
     // Productos
+    //==============================
 
     platos
 
-    .filter(plato=>plato.categoria===categoria)
+    .filter(plato => plato.categoria === categoria.nombre)
 
     .forEach(plato=>{
 
-        const card=document.createElement("div");
+        const card = document.createElement("div");
 
-        card.className="card";
+        card.className = "card";
 
 
         //--------------------------------
         // Insignias
         //--------------------------------
 
-        let recomendado="";
+        let recomendado = "";
 
         if(plato.recomendado){
 
-            recomendado=`<span class="badge recomendado">⭐ Recomendado</span>`;
+            recomendado = `<span class="badge recomendado">⭐ Recomendado</span>`;
 
         }
 
-        let picante="";
+        let picante = "";
 
         if(plato.picante){
 
-            picante=`<span class="badge picante">🌶️ Picante</span>`;
+            picante = `<span class="badge picante">🌶️ Picante</span>`;
 
         }
 
@@ -187,11 +210,11 @@ categorias.forEach(categoria=>{
         // Botón
         //--------------------------------
 
-        let boton="";
+        let boton = "";
 
-        if(plato.stock>0 && plato.disponible){
+        if(plato.stock > 0 && plato.disponible){
 
-            boton=`
+            boton = `
 
             <a
 
@@ -207,11 +230,9 @@ categorias.forEach(categoria=>{
 
             `;
 
-        }
+        }else{
 
-        else{
-
-            boton=`
+            boton = `
 
             <button class="agotado">
 
@@ -228,9 +249,9 @@ categorias.forEach(categoria=>{
         // Tarjeta
         //--------------------------------
 
-        card.innerHTML=`
+        card.innerHTML = `
 
-            <img src="${plato.imagen}">
+            <img src="${plato.imagen}" alt="${plato.nombre}">
 
             ${recomendado}
 
@@ -244,7 +265,7 @@ categorias.forEach(categoria=>{
 
             <small>
 
-            Stock disponible: ${plato.stock}
+                Stock disponible: ${plato.stock}
 
             </small>
 

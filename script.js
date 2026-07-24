@@ -22,13 +22,13 @@ const platos = [
 
     descripcion:"Promoción especial de seis tamales artesanales.",
 
-    stock:0,
+    stock:10,
 
     recomendado:true,
 
     picante:false,
 
-    disponible:false
+    disponible:true
 
 },
 

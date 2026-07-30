@@ -6,7 +6,7 @@ RESET
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', Arial, Helvetica, sans-serif;
+    font-family:'Poppins',Arial,Helvetica,sans-serif;
 }
 
 html{
@@ -19,13 +19,9 @@ BODY
 ==========================================*/
 
 body{
-
     background:#111827;
-
     color:#F8FAFC;
-
     line-height:1.6;
-
 }
 
 
@@ -34,39 +30,25 @@ HEADER
 ==========================================*/
 
 header{
-
     text-align:center;
-
     padding:60px 20px 40px;
-
 }
 
 .logo{
-
     width:130px;
-
     margin-bottom:20px;
-
 }
 
 header h1{
-
     font-size:3rem;
-
     margin-bottom:15px;
-
 }
 
 header p{
-
     max-width:850px;
-
     margin:auto;
-
     color:#CBD5E1;
-
     font-size:1.05rem;
-
 }
 
 
@@ -75,13 +57,9 @@ CONTENEDOR GENERAL
 ==========================================*/
 
 .menu{
-
     width:95%;
-
     max-width:1450px;
-
     margin:auto;
-
 }
 
 
@@ -90,87 +68,56 @@ TÍTULOS
 ==========================================*/
 
 .tituloCategoria{
-
-    margin-top:70px;
-
-    margin-bottom:30px;
-
+    margin:70px 0 30px;
     padding:15px 20px;
-
     font-size:2rem;
-
-    font-weight:bold;
-
+    font-weight:700;
     text-transform:uppercase;
-
     letter-spacing:2px;
-
     border-radius:12px;
-
 }
 
 .platosTitulo{
-
     background:#1C3D2D;
-
     border-left:6px solid #25D366;
-
 }
 
 .bebidasTitulo{
-
     background:#123B4D;
-
     border-left:6px solid #00BFFF;
-
 }
 
 .postresTitulo{
-
     background:#4A2237;
-
     border-left:6px solid #FF5AA5;
-
 }
 
 .ofertasTitulo{
-
     background:#4A3B12;
-
     border-left:6px solid #FFD700;
-
     color:#FFD700;
-
 }
+
 
 /*==========================================
 GRILLAS
 ==========================================*/
 
 .contenedorCategoria{
-
     display:grid;
-
     gap:30px;
-
     margin-bottom:60px;
-
 }
 
 .platos{
-
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
 }
 
 .bebidas,
 .postres,
 .ofertas{
-
     grid-template-columns:1fr;
-
     justify-items:center;
-
 }
 
 
@@ -179,40 +126,23 @@ TARJETAS
 ==========================================*/
 
 .card{
-
     background:#1F2937;
-
     border-radius:18px;
-
     overflow:hidden;
-
     box-shadow:0 12px 30px rgba(0,0,0,.35);
-
     transition:.35s;
-
 }
 
 .card:hover{
-
     transform:translateY(-8px);
-
     box-shadow:0 18px 40px rgba(0,0,0,.45);
-
 }
-
-
-/*==========================================
-TARJETAS GRANDES
-==========================================*/
 
 .bebidas .card,
 .postres .card,
 .ofertas .card{
-
     width:100%;
-
     max-width:800px;
-
 }
 
 
@@ -221,21 +151,15 @@ IMÁGENES
 ==========================================*/
 
 .card img{
-
     width:100%;
-
     height:260px;
-
     object-fit:cover;
-
 }
 
 .bebidas .card img,
 .postres .card img,
 .ofertas .card img{
-
     height:430px;
-
 }
 
 
@@ -244,41 +168,38 @@ TEXTOS
 ==========================================*/
 
 .card h2{
-
-    padding:20px;
-
-    padding-bottom:10px;
-
+    padding:20px 20px 10px;
     font-size:1.45rem;
-
 }
 
 .card p{
-
     padding:0 20px;
-
     color:#D1D5DB;
-
 }
 
 .card h3{
-
     padding:18px 20px 8px;
-
     color:#25D366;
-
     font-size:1.6rem;
-
 }
 
-.card small{
 
+/*==========================================
+DISPONIBILIDAD
+==========================================*/
+
+.card small,
+.disponibilidad{
     display:block;
-
-    padding:0 20px 20px;
-
-    color:#94A3B8;
-
+    margin:16px 20px;
+    padding:10px;
+    text-align:center;
+    background:rgba(37,211,102,.12);
+    border:1px solid rgba(37,211,102,.35);
+    border-radius:10px;
+    color:#25D366;
+    font-size:.9rem;
+    font-weight:600;
 }
 
 
@@ -287,146 +208,73 @@ BADGES
 ==========================================*/
 
 .badge{
-
     display:inline-block;
-
     margin:18px 0 0 20px;
-
     padding:7px 14px;
-
     border-radius:30px;
-
     font-size:.8rem;
-
     font-weight:bold;
-
 }
 
 .recomendado{
-
     background:#FFD700;
-
     color:#000;
-
 }
 
 .picante{
-
     background:#E53935;
-
     color:#FFF;
-
 }
 
 
 /*==========================================
-BOTÓN PEDIDO
+BOTÓN WHATSAPP DEL PRODUCTO
 ==========================================*/
 
 .btnPedido{
-
     display:block;
-
     width:90%;
-
-    margin:20px auto;
-
+    margin:20px auto 24px;
     padding:16px;
-
     text-align:center;
-
-    background:#25D366;
-
-    color:white;
-
     text-decoration:none;
-
-    font-weight:bold;
-
+    background:#25D366;
+    color:#FFF;
+    font-weight:700;
     border-radius:10px;
-
     transition:.3s;
-
 }
 
 .btnPedido:hover{
-
     background:#1FA855;
-
+    transform:translateY(-2px);
 }
 
 
 /*==========================================
-BOTÓN AGOTADO
-==========================================*/
-
-.agotado{
-
-    display:block;
-
-    width:90%;
-
-    margin:20px auto;
-
-    padding:16px;
-
-    background:#555;
-
-    color:white;
-
-    border:none;
-
-    border-radius:10px;
-
-    font-size:1rem;
-
-    cursor:not-allowed;
-
-}
-
-
-/*==========================================
-BOTÓN WHATSAPP
+BOTÓN FLOTANTE
 ==========================================*/
 
 .floating{
-
     position:fixed;
-
     right:25px;
-
     bottom:25px;
-
     width:70px;
-
     height:70px;
-
     border-radius:50%;
-
     background:#25D366;
-
-    color:white;
-
+    color:#FFF;
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     text-decoration:none;
-
     font-size:35px;
-
     box-shadow:0 12px 25px rgba(0,0,0,.45);
-
     transition:.3s;
-
 }
 
 .floating:hover{
-
     transform:scale(1.1);
-
 }
 
 
@@ -435,27 +283,17 @@ FOOTER
 ==========================================*/
 
 footer{
-
     margin-top:80px;
-
     padding:40px 20px;
-
     background:#0F172A;
-
     text-align:center;
-
     border-top:1px solid #273549;
-
 }
 
 footer p{
-
     color:#94A3B8;
-
     margin:6px 0;
-
     font-size:.95rem;
-
 }
 
 
@@ -466,35 +304,26 @@ RESPONSIVE
 @media(max-width:900px){
 
     header h1{
-
         font-size:2.2rem;
-
     }
 
     .tituloCategoria{
-
         font-size:1.6rem;
-
     }
 
     .platos{
-
         grid-template-columns:1fr;
-
     }
 
     .bebidas .card,
-    .postres .card{
-
+    .postres .card,
+    .ofertas .card{
         max-width:100%;
-
     }
 
     .bebidas .card img,
-    .postres .card img{
-
+    .postres .card img,
+    .ofertas .card img{
         height:300px;
-
     }
-
 }

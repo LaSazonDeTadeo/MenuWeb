@@ -10,126 +10,65 @@ const whatsapp = "5491121793883";
 //========================================
 
 const platos = [
+
 {
-
-    categoria:"Ofertas",
-
-    nombre:"6 Tamales Peruanos",
-
-    precio:20000,
-
-    imagen:"img/tamales.jpg",
-
-    descripcion:"Promoción especial de seis tamales artesanales.",
-
-    stock:25,
-
-    recomendado:true,
-
-    picante:false,
-
-    disponible:true
-
+    categoria: "Ofertas",
+    nombre: "6 Tamales Peruanos",
+    precio: 20000,
+    imagen: "img/tamales.jpg",
+    descripcion: "Promoción especial de seis tamales artesanales.",
+    recomendado: true,
+    picante: false
 },
 
 {
-    categoria:"Platos",
-
-    nombre:"Tiradito de lenguado en salsa de ají amarillo",
-
-    precio:18000,
-
-    imagen:"img/tiradito.jpg",
-
-    descripcion:"Delicado tiradito acompañado de salsa de ají amarillo.",
-
-    stock:10,
-
-    recomendado:true,
-
-    picante:false,
-
-    disponible:true
+    categoria: "Platos",
+    nombre: "Tiradito de lenguado en salsa de ají amarillo",
+    precio: 18000,
+    imagen: "img/tiradito.jpg",
+    descripcion: "Delicado tiradito acompañado de salsa de ají amarillo.",
+    recomendado: true,
+    picante: false
 },
 
 {
-    categoria:"Platos",
-
-    nombre:"Seco de cordero con frijoles",
-
-    precio:15000,
-
-    imagen:"img/seco.jpg",
-
-    descripcion:"Seco tradicional acompañado de frijoles.",
-
-    stock:15,
-
-    recomendado:true,
-
-    picante:false,
-
-    disponible:true
+    categoria: "Platos",
+    nombre: "Seco de cordero con frijoles",
+    precio: 15000,
+    imagen: "img/seco.jpg",
+    descripcion: "Seco tradicional acompañado de frijoles.",
+    recomendado: true,
+    picante: false
 },
 
 {
-    categoria:"Platos",
-
-    nombre:"Chanfainita con tallarines rojos, ceviche y crema de huancaína",
-
-    precio:12000,
-
-    imagen:"img/chanfainita.jpg",
-
-    descripcion:"Combinado peruano tradicional.",
-
-    stock:10,
-
-    recomendado:false,
-
-    picante:true,
-
-    disponible:true
+    categoria: "Platos",
+    nombre: "Chanfainita con tallarines rojos, ceviche y crema de huancaína",
+    precio: 12000,
+    imagen: "img/chanfainita.jpg",
+    descripcion: "Combinado peruano tradicional.",
+    recomendado: false,
+    picante: true
 },
 
 {
-    categoria:"Bebidas",
-
-    nombre:"Champus + 2 empanadas",
-
-    precio:6000,
-
-    imagen:"img/champus.jpg",
-
-    descripcion:"Bebida tradicional con dos empanadas.",
-
-    stock:10,
-
-    recomendado:false,
-
-    picante:false,
-
-    disponible:true
+    categoria: "Bebidas",
+    nombre: "Champus + 2 empanadas",
+    precio: 6000,
+    imagen: "img/champus.jpg",
+    descripcion: "Bebida tradicional con dos empanadas.",
+    recomendado: false,
+    picante: false
 },
 
 {
-    categoria:"Postres",
-
-    nombre:"Todos los postres",
-
-    precio:5000,
-
-    imagen:"img/postres.jpg",
-
-    descripcion:"Todos los postres disponibles al mismo precio.",
-
-    stock:30,
-
-    recomendado:false,
-
-    picante:false,
-
-    disponible:true
+    categoria: "Postres",
+    nombre: "Todos los postres",
+    precio: 5000,
+    imagen: "img/postres.jpg",
+    descripcion: "Todos los postres disponibles al mismo precio.",
+    recomendado: false,
+    picante: false
 }
 
 ];
@@ -144,23 +83,23 @@ const menu = document.getElementById("menu");
 const categorias = [
 
     {
-        nombre:"Ofertas",
-        clase:"ofertas"
+        nombre: "Ofertas",
+        clase: "ofertas"
     },
 
     {
-        nombre:"Platos",
-        clase:"platos"
+        nombre: "Platos",
+        clase: "platos"
     },
 
     {
-        nombre:"Bebidas",
-        clase:"bebidas"
+        nombre: "Bebidas",
+        clase: "bebidas"
     },
 
     {
-        nombre:"Postres",
-        clase:"postres"
+        nombre: "Postres",
+        clase: "postres"
     }
 
 ];
@@ -170,11 +109,11 @@ const categorias = [
 // CREAR MENÚ
 //========================================
 
-categorias.forEach(categoria=>{
+categorias.forEach(categoria => {
 
-    //==============================
+    //--------------------------------
     // Título
-    //==============================
+    //--------------------------------
 
     const titulo = document.createElement("h2");
 
@@ -185,9 +124,9 @@ categorias.forEach(categoria=>{
     menu.appendChild(titulo);
 
 
-    //==============================
+    //--------------------------------
     // Contenedor
-    //==============================
+    //--------------------------------
 
     const contenedor = document.createElement("div");
 
@@ -196,99 +135,69 @@ categorias.forEach(categoria=>{
     menu.appendChild(contenedor);
 
 
-    //==============================
+    //--------------------------------
     // Productos
-    //==============================
+    //--------------------------------
 
     platos
+        .filter(plato => plato.categoria === categoria.nombre)
+        .forEach(plato => {
 
-    .filter(plato => plato.categoria === categoria.nombre)
+            const card = document.createElement("div");
 
-    .forEach(plato=>{
-
-        const card = document.createElement("div");
-
-        card.className = "card";
+            card.className = "card";
 
 
-        //--------------------------------
-        // Insignias
-        //--------------------------------
+            //--------------------------------
+            // Insignias
+            //--------------------------------
 
-        let recomendado = "";
+            let recomendado = "";
 
-        if(plato.recomendado){
+            if (plato.recomendado) {
+                recomendado = `<span class="badge recomendado">⭐ Recomendado</span>`;
+            }
 
-            recomendado = `<span class="badge recomendado">⭐ Recomendado</span>`;
+            let picante = "";
 
-        }
-
-        let picante = "";
-
-        if(plato.picante){
-
-            picante = `<span class="badge picante">🌶️ Picante</span>`;
-
-        }
+            if (plato.picante) {
+                picante = `<span class="badge picante">🌶️ Picante</span>`;
+            }
 
 
-        //--------------------------------
-        // Botón
-        //--------------------------------
+            //--------------------------------
+            // Tarjeta
+            //--------------------------------
 
-        let boton = "";
+            card.innerHTML = `
 
-if (plato.stock > 0 && plato.disponible) {
+                <img src="${plato.imagen}" alt="${plato.nombre}">
 
-    boton = `
-        <a
-            class="btnPedido"
-            target="_blank"
-            href="https://wa.me/${whatsapp}?text=Hola,%20quiero%20hacer%20un%20pedido%20de:%20${encodeURIComponent(plato.nombre)}">
-            Pedir por WhatsApp
-        </a>
-    `;
+                ${recomendado}
 
-} else {
+                ${picante}
 
-    boton = `
-        <button class="agotado">
-            Agotado
-        </button>
-    `;
+                <h2>${plato.nombre}</h2>
 
-}
+                <p>${plato.descripcion}</p>
 
-        //--------------------------------
-        // Tarjeta
-        //--------------------------------
+                <h3>$${plato.precio.toLocaleString()}</h3>
 
-        card.innerHTML = `
+                <small>
+                    📦 Preguntar por disponibilidad
+                </small>
 
-            <img src="${plato.imagen}" alt="${plato.nombre}">
+                <a
+                    class="btnPedido"
+                    target="_blank"
+                    href="https://wa.me/${whatsapp}?text=${encodeURIComponent(`Hola, quiero consultar la disponibilidad de: ${plato.nombre}`)}">
+                    Consultar por WhatsApp
+                </a>
 
-            ${recomendado}
+            `;
 
-            ${picante}
+            contenedor.appendChild(card);
 
-            <h2>${plato.nombre}</h2>
-
-            <p>${plato.descripcion}</p>
-
-            <h3>$${plato.precio.toLocaleString()}</h3>
-
-            <small>
-
-                Stock disponible: ${plato.stock}
-
-            </small>
-
-            ${boton}
-
-        `;
-
-        contenedor.appendChild(card);
-
-    });
+        });
 
 });

@@ -8,14 +8,12 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>La Sazón de Tadeo</title>
+    <title>La Sazón de Tadeo | Menú Digital</title>
 
     <meta name="description"
-          content="Menú digital de La Sazón de Tadeo">
+          content="Menú digital de La Sazón de Tadeo. Consultá disponibilidad y realizá tu pedido por WhatsApp.">
 
     <link rel="icon" href="img/logo.png">
-
-    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
@@ -30,6 +28,8 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -40,25 +40,28 @@ HEADER
 
 <header>
 
-    <img src="img/logo.png"
-         alt="Logo La Sazón de Tadeo"
-         class="logo">
+    <img
+        src="img/logo.png"
+        alt="Logo de La Sazón de Tadeo"
+        class="logo">
 
     <h1>La Sazón de Tadeo</h1>
 
     <p>
+        Descubrí el auténtico sabor de la gastronomía peruana con platos preparados de forma artesanal y con ingredientes frescos.
+    </p>
 
-        Descubrí nuestros platos tradicionales preparados con ingredientes frescos y el auténtico sabor peruano.</p>
-    <p> 
-        ACLARACION: Las imagenes de la comida no estan sujetas al packaging sino al delivery de la misma, muchas gracias.</p>
+    <p class="aclaracion">
+        📦 Las imágenes son ilustrativas y corresponden a la presentación del producto en modalidad delivery. El packaging puede variar.
+    </p>
 
 </header>
 
 
 <!--========================================
 MENÚ
-JavaScript insertará automáticamente
-todas las categorías y tarjetas aquí.
+El contenido se genera automáticamente
+desde script.js
 =========================================-->
 
 <main>
@@ -66,7 +69,6 @@ todas las categorías y tarjetas aquí.
     <section
         id="menu"
         class="menu">
-
     </section>
 
 </main>
@@ -77,18 +79,13 @@ BOTÓN FLOTANTE WHATSAPP
 =========================================-->
 
 <a
+    href="https://wa.me/5491121793883?text=Hola,%20quiero%20hacer%20una%20consulta."
+    class="floating"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Consultar por WhatsApp">
 
-href="https://wa.me/5491121793883"
-
-class="floating"
-
-target="_blank"
-
-aria-label="WhatsApp"
-
->
-
-<i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
@@ -100,15 +97,11 @@ FOOTER
 <footer>
 
     <p>
-
         © 2026 La Sazón de Tadeo
-
     </p>
 
     <p>
-
-        Menú Digital desarrollado con HTML, CSS y JavaScript.
-
+        Todos los pedidos y consultas se realizan exclusivamente por WhatsApp.
     </p>
 
 </footer>

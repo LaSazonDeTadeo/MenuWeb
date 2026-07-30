@@ -51,6 +51,14 @@ header p{
     font-size:1.05rem;
 }
 
+.aclaracion{
+    margin-top:15px;
+    color:#FACC15;
+    font-size:.95rem;
+    font-weight:500;
+    max-width:850px;
+}
+
 
 /*==========================================
 CONTENEDOR GENERAL
@@ -68,7 +76,8 @@ TÍTULOS
 ==========================================*/
 
 .tituloCategoria{
-    margin:70px 0 30px;
+    margin-top:70px;
+    margin-bottom:30px;
     padding:15px 20px;
     font-size:2rem;
     font-weight:700;
@@ -168,7 +177,8 @@ TEXTOS
 ==========================================*/
 
 .card h2{
-    padding:20px 20px 10px;
+    padding:20px;
+    padding-bottom:10px;
     font-size:1.45rem;
 }
 
@@ -188,7 +198,6 @@ TEXTOS
 DISPONIBILIDAD
 ==========================================*/
 
-.card small,
 .disponibilidad{
     display:block;
     margin:16px 20px;
@@ -228,7 +237,7 @@ BADGES
 
 
 /*==========================================
-BOTÓN WHATSAPP DEL PRODUCTO
+BOTÓN PEDIDO
 ==========================================*/
 
 .btnPedido{
@@ -252,7 +261,7 @@ BOTÓN WHATSAPP DEL PRODUCTO
 
 
 /*==========================================
-BOTÓN FLOTANTE
+BOTÓN FLOTANTE WHATSAPP
 ==========================================*/
 
 .floating{
@@ -325,5 +334,13 @@ RESPONSIVE
     .postres .card img,
     .ofertas .card img{
         height:300px;
+    }
+
+    .floating{
+        width:60px;
+        height:60px;
+        font-size:30px;
+        right:20px;
+        bottom:20px;
     }
 }

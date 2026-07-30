@@ -112,7 +112,7 @@ const categorias = [
 categorias.forEach(categoria => {
 
     //--------------------------------
-    // Título
+    // Título de la categoría
     //--------------------------------
 
     const titulo = document.createElement("h2");
@@ -155,14 +155,41 @@ categorias.forEach(categoria => {
             let recomendado = "";
 
             if (plato.recomendado) {
-                recomendado = `<span class="badge recomendado">⭐ Recomendado</span>`;
+
+                recomendado = `
+                    <span class="badge recomendado">
+                        ⭐ Recomendado
+                    </span>
+                `;
+
             }
 
             let picante = "";
 
             if (plato.picante) {
-                picante = `<span class="badge picante">🌶️ Picante</span>`;
+
+                picante = `
+                    <span class="badge picante">
+                        🌶️ Picante
+                    </span>
+                `;
+
             }
+
+
+            //--------------------------------
+            // Botón WhatsApp
+            //--------------------------------
+
+            const boton = `
+                <a
+                    class="btnPedido"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://wa.me/${whatsapp}?text=${encodeURIComponent(`Hola, quiero consultar la disponibilidad de: ${plato.nombre}`)}">
+                    Consultar por WhatsApp
+                </a>
+            `;
 
 
             //--------------------------------
@@ -171,7 +198,9 @@ categorias.forEach(categoria => {
 
             card.innerHTML = `
 
-                <img src="${plato.imagen}" alt="${plato.nombre}">
+                <img
+                    src="${plato.imagen}"
+                    alt="${plato.nombre}">
 
                 ${recomendado}
 
@@ -183,16 +212,11 @@ categorias.forEach(categoria => {
 
                 <h3>$${plato.precio.toLocaleString()}</h3>
 
-                <small>
+                <small class="disponibilidad">
                     📦 Preguntar por disponibilidad
                 </small>
 
-                <a
-                    class="btnPedido"
-                    target="_blank"
-                    href="https://wa.me/${whatsapp}?text=${encodeURIComponent(`Hola, quiero consultar la disponibilidad de: ${plato.nombre}`)}">
-                    Consultar por WhatsApp
-                </a>
+                ${boton}
 
             `;
 

@@ -97,7 +97,7 @@ const platos = [
         categoria: "Postres",
         subcategoria: "Delicias caseras",
         nombre: "Budines",
-        precio: null, // Reemplazar null por el precio
+        precio: 12000, // Reemplazar null por el precio
         imagen: "img/Budines.jpg",
         descripcion: "Budines caseros, ideales para acompañar una bebida.",
         recomendado: false,
@@ -108,7 +108,7 @@ const platos = [
         categoria: "Postres",
         subcategoria: "Delicias caseras",
         nombre: "Porción de torta de naranja",
-        precio: null, // Reemplazar null por el precio
+        precio: 5000, // Reemplazar null por el precio
         imagen: "img/TortaNaranjosa.jpg",
         descripcion: "Porción de torta casera de naranja.",
         recomendado: false,

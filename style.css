@@ -344,3 +344,32 @@ RESPONSIVE
         bottom:20px;
     }
 }
+
+
+/*========================================
+  SUBCATEGORÍAS DE POSTRES
+========================================*/
+
+.seccionSubcategoria {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.tituloSubcategoria {
+    margin: 25px 0;
+    text-align: center;
+    color: #f5c26b;
+    font-size: 1.7rem;
+}
+
+.precioConsultar {
+    color: #f5c26b;
+    font-size: 1.2rem;
+}
+
+.insignias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}

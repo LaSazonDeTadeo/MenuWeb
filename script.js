@@ -87,7 +87,7 @@ const platos = [
         subcategoria: "Delicias caseras",
         nombre: "Pie de limón",
         precio: null, // Reemplazar null por el precio
-        imagen: "img/pie-limon.jpg",
+        imagen: "img/PL.jpg",
         descripcion: "Pie de limón casero, fresco y cremoso.",
         recomendado: false,
         picante: false
@@ -98,7 +98,7 @@ const platos = [
         subcategoria: "Delicias caseras",
         nombre: "Budines",
         precio: null, // Reemplazar null por el precio
-        imagen: "img/budines.jpg",
+        imagen: "img/Budines.jpg",
         descripcion: "Budines caseros, ideales para acompañar una bebida.",
         recomendado: false,
         picante: false
@@ -109,7 +109,7 @@ const platos = [
         subcategoria: "Delicias caseras",
         nombre: "Porción de torta de naranja",
         precio: null, // Reemplazar null por el precio
-        imagen: "img/torta-naranja.jpg",
+        imagen: "img/TortaNaranjosa.jpg",
         descripcion: "Porción de torta casera de naranja.",
         recomendado: false,
         picante: false

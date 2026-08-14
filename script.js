@@ -97,7 +97,7 @@ const platos = [
         categoria: "Postres",
         subcategoria: "Delicias caseras",
         nombre: "Budines",
-        precio: 12000, // Reemplazar null por el precio
+        precio: 10000, // Reemplazar null por el precio
         imagen: "img/Budines.jpg",
         descripcion: "Budines caseros, ideales para acompañar una bebida.",
         recomendado: false,

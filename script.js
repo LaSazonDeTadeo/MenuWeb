@@ -86,7 +86,7 @@ const platos = [
         categoria: "Postres",
         subcategoria: "Delicias caseras",
         nombre: "Pie de limón",
-        precio: null, // Reemplazar null por el precio
+        precio: 4000, // Reemplazar null por el precio
         imagen: "img/PL.jpg",
         descripcion: "Pie de limón casero, fresco y cremoso.",
         recomendado: false,
